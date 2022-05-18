@@ -1,10 +1,8 @@
 package Searching;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class PairSum {
     public static void main(String[] args) {
+        
         int[]arr={2,4,6,7,9,12,14};
         int sum=21;
         pairSum(arr, sum);

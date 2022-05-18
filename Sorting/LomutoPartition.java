@@ -21,7 +21,6 @@ public class LomutoPartition {
     }
     public static void main(String[] args) {
         int[]arr={3,23,24,11,2,5,1,4,3,7,5,1,9};
-        int k=4;
         System.out.println(lomutoPartition(arr, 0,arr.length-1));
         for(int i:arr){
             System.out.print(i+" ");
