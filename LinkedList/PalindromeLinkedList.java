@@ -1,5 +1,15 @@
 package LinkedList;
 
+class Node {
+    int data;
+    Node next, random;
+
+    Node(int x) {
+        data = x;
+        next = random = null;
+    }
+}
+
 public class PalindromeLinkedList {
     public static Node reverse(Node node) {
         Node prev = null;

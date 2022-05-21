@@ -1,6 +1,12 @@
 package LinkedList;
 
+class Node {
+    int data;
+    Node next;
+}
+
 public class DetectLoop {
+
     public static boolean detectLoop(Node head) {
         Node low = new Node();
         low.next = head;

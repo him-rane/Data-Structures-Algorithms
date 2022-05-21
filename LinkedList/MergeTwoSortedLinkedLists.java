@@ -1,6 +1,13 @@
 package LinkedList;
 
+class Node {
+    int data;
+    Node next;
+
+}
+
 public class MergeTwoSortedLinkedLists {
+
     public static Node mergeTwoSortedList(Node h1, Node h2) {
         Node node = new Node();
         Node head = node;

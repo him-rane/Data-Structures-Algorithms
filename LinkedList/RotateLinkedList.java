@@ -1,5 +1,15 @@
 package LinkedList;
 
+class Node {
+    int data;
+    Node next, random;
+
+    Node(int x) {
+        data = x;
+        next = random = null;
+    }
+}
+
 public class RotateLinkedList {
     public Node rotate(Node head, int k) {
         // add code here

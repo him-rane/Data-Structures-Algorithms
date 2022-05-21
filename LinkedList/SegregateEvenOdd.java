@@ -17,19 +17,4 @@ public class SegregateEvenOdd {
             high = high.next;
         }
     }
-
-    public static void main(String[] args) {
-        LinkedList ls = new LinkedList();
-
-        ls.add(4);
-        ls.add(8);
-        ls.add(90);
-        ls.add(5);
-        ls.add(7);
-        ls.add(1);
-        ls.dislplay();
-
-        segregateEvenOdd(ls.head);
-        ls.dislplay();
-    }
 }

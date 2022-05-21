@@ -1,6 +1,19 @@
 package LinkedList;
 
+class Node {
+    int data;
+    Node next;
+
+    Node(int d) {
+        data = d;
+        next = null;
+    }
+}
+
 public class AddTwoNumbers {
+
+    static Node head1, head2;
+
     public static Node reverse(Node node) {
         Node prev = null;
         while (node != null) {
@@ -12,7 +25,8 @@ public class AddTwoNumbers {
         return prev;
     }
 
-    static Node addTwoLists(Node first, Node second) {
+    public Node addTwoLists(Node first, Node second) {
+
         first = reverse(first);
         second = reverse(second);
 
@@ -59,5 +73,21 @@ public class AddTwoNumbers {
             curr = curr.next;
         }
         return reverse(sumList.next);
+    }
+
+    public static void main(String[] args) {
+        AddTwoNumbers list = new AddTwoNumbers();
+        // creating first list
+
+        head1 = new Node(7);
+        head1.next = new Node(5);
+        head1.next.next = new Node(9);
+        head1.next.next.next = new Node(4);
+        head1.next.next.next.next = new Node(6);
+        // creating second list
+        head2 = new Node(8);
+        head2.next = new Node(4);
+
+        list.addTwoLists(head1, head2);
     }
 }

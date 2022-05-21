@@ -1,5 +1,10 @@
 package LinkedList;
 
+class Node {
+    int data;
+    Node next;
+}
+
 public class NthNodeFromEnd {
     public static int nthNodeFromEnd(Node head, int k) {
         if (k < 1)
