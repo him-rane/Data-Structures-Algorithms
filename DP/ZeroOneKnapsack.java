@@ -1,7 +1,7 @@
 package DP;
 
 public class ZeroOneKnapsack {
-    public static int ZeroOneKnapsack(int[] val, int[] wt, int cap) {
+    public static int zeroOneKnapsack(int[] val, int[] wt, int cap) {
         int n = val.length;
         int dp[][] = new int[n + 1][cap + 1];
         for (int i = 1; i < dp.length; i++) {
@@ -17,6 +17,9 @@ public class ZeroOneKnapsack {
     }
 
     public static void main(String[] args) {
-
+        int[] wt = { 2, 3, 4, 5 };
+        int[] val = { 1, 2, 3, 4 };
+        int cap = 5;
+        System.out.println(zeroOneKnapsack(val, wt, cap));
     }
 }
