@@ -1,6 +1,6 @@
-package DP;
+package LoverBuberSDESheet.Array;
 
-public class ClimbingStairsWithMinimumMoves {
+class MinimumNumberOfJumps {
     static int minJumps(int[] arr) {
         // your code here
         int n = arr.length;
@@ -30,9 +30,9 @@ public class ClimbingStairsWithMinimumMoves {
     }
 
     public static void main(String[] args) {
-        int[] jumps = { 3, 2, 4, 0, 20, 2, 3, 1, 2, 2 };
-
-        // int res = minimumJumps(jumps);
-        // System.out.println(res);
+        int[] arr = { 2, 3, 1, 8, 4, 2, 4, 6, 1, 2, 1, 4, 2, 5, 0, 2, 1, 4, 5, 0, 5 };
+        int res = minJumps(arr);
+        System.out.println(res);
     }
+
 }
