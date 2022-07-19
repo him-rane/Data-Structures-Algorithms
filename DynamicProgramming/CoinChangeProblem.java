@@ -31,7 +31,7 @@ public class CoinChangeProblem {
 
     public static void main(String[] args) {
         int[] coin = { 1, 2, 3 };
-        int sum = 5;
+        int sum = 4;
         int n = coin.length;
         System.out.println(coinChangeProblem(coin, n, sum));
     }

@@ -34,6 +34,7 @@ public class CycleSort {
                 item = arr[pos];
                 arr[pos] = temp;
             }
+
         }
     }
 
@@ -43,6 +44,7 @@ public class CycleSort {
         for (int i : arr) {
             System.out.print(i + " ");
         }
+
     }
 
 }

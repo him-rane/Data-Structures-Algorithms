@@ -37,9 +37,9 @@ class RemoveLoopInLinkedList {
         head.next.next.next.next.next.next = new Node(11);
         head.next.next.next.next.next.next.next = temp;
 
-        System.out.println(DetectLoopInLinkedList.detectLoop(head));
-        removeLoop(head);
-        System.out.println(DetectLoopInLinkedList.detectLoop(head));
+        // System.out.println(DetectLoopInLinkedList.detectLoop(head));
+        // removeLoop(head);
+        // System.out.println(DetectLoopInLinkedList.detectLoop(head));
 
     }
 }
